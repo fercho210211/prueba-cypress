@@ -5,6 +5,7 @@ const CORREO = '#ctl00_MainContent_SignupControl1_TextBoxEmail'
 const PASSWORD ='#ctl00_MainContent_SignupControl1_TextBoxPassword'
 const SUBMIT_CHECK ='#ctl00_MainContent_SignupControl1_CheckBoxTerms'
 const SUBMIT_REGISTRAR_BUTTON ='#ctl00_MainContent_SignupControl1_ButtonSignup'
+const ErrorMessage = '.ui-state-error'
 
 class RegistrarUser {
     static visit(){
@@ -27,6 +28,9 @@ class RegistrarUser {
     }
     static submitRegistrar(){
         cy.get(SUBMIT_REGISTRAR_BUTTON).click()
+    }
+    static ErrorUserExist(){
+        cy.contains('Error. Account with this email address already exists!').should('exist')
     }
 
 }

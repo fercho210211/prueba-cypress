@@ -15,6 +15,7 @@ it('Registrar Usuario',()=>{
     RegistrarUser.userPassword('123')
     RegistrarUser.submitCheck()
     RegistrarUser.submitRegistrar()
+    RegistrarUser.ErrorUserExist()
 })
 it('loguarse como usuario',()=>{
     LoginPage.visit()
@@ -49,8 +50,8 @@ it('eliminar trabajo',()=>{
     LoginPage.fillUsername('l123@gmail.com')
     LoginPage.fillPassword('123')
     LoginPage.submit()    
-    //eliminarSteps.eliminarTrabajo()   
-    //eliminarSteps.submit()
+    eliminarSteps.eliminarTrabajo()   
+    eliminarSteps.submit()
     
 })
 

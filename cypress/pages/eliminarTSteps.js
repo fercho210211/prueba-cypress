@@ -1,4 +1,4 @@
-const SELECIONAR_TRABAJO = '#ItemId_11190226 > .ProjItemTable > tbody > tr > :nth-child(2) > #ItemCheckDiv > #ItemCheckBox'
+const SELECIONAR_TRABAJO = '#ItemId_11191098 > .ProjItemTable > tbody > tr > :nth-child(2) > #ItemCheckDiv > #ItemCheckBox'
 const ELIMINAR_SUBMIT_BUTTON ='#DoneItemsDeleteLink'
 const TRABAJO_ELIMINADO ='#NewItemContentInput'
 
